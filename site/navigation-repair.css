@@ -1,0 +1,47 @@
+/* Navigation visibility and placement must not inherit the shared button layout. */
+@media(min-width:768px){
+.header{display:grid;grid-template-columns:minmax(0,1fr) 92px minmax(0,1fr);column-gap:32px;align-items:start;height:114px;padding:15px 24px}
+.header .menu-toggle,.header .mobile-index{display:none}
+.header nav,.header nav.is-open{display:contents}
+.header .nav-left{grid-column:1;grid-row:1;display:flex;flex-direction:row;justify-content:flex-start;align-items:center;gap:34px;width:auto;padding:0;min-width:0}
+.header .nav-right{grid-column:3;grid-row:1;display:flex;flex-direction:row;justify-content:flex-end;align-items:center;gap:34px;width:auto;padding:0;min-width:0}
+.header .monogram{grid-column:2;grid-row:1;position:static;margin:0;justify-self:center}
+.header nav a{display:inline-flex;align-items:center;justify-content:center;padding:8px 10px;min-height:38px;line-height:1.4;white-space:nowrap}
+}
+@media(min-width:768px) and (max-width:1000px){.header{column-gap:20px}.header .nav-left,.header .nav-right{gap:16px}.header nav a{padding:8px 6px}}
+@media(max-width:767px){
+.header{height:84px;display:flex;padding:0;justify-content:center;align-items:flex-start;position:relative}
+.header .menu-toggle,.header .mobile-index{display:inline-flex;align-items:center;justify-content:center;position:absolute;top:20px;height:44px;min-height:44px;padding:8px 10px;margin:0;line-height:1.4;gap:6px}
+.header .menu-toggle{left:14px;right:auto;width:auto;border:0;background-color:transparent}
+.header .mobile-index{right:14px;left:auto;width:auto}
+.header .monogram{position:static;margin-top:4px;width:auto;height:auto;line-height:1.45}
+.header nav{display:none;position:absolute;top:84px;left:0;right:0;width:auto;margin:0;padding:16px 24px 24px;background:#f7f2e9;border-bottom:1px solid #173f4330;z-index:35}
+.header nav.is-open{display:flex;flex-direction:column;gap:0;align-items:stretch}
+.header nav .nav-left,.header nav .nav-right{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;gap:0;width:100%;padding:0;margin:0}
+.header nav a{display:flex;align-items:center;justify-content:flex-start;text-align:left;width:100%;min-height:46px;padding:10px 12px;line-height:1.5}
+.header nav .nav-index{display:none}
+}
+/* Restore block placement for links centred with automatic margins. */
+.contact-section .pill-link{display:flex;align-items:center;justify-content:center;width:fit-content;max-width:100%;margin:0 auto;gap:7px;min-height:38px;padding:8px 14px!important;line-height:1.5}
+.light-link{display:flex;align-items:center;justify-content:flex-start;width:fit-content;gap:7px;min-height:36px;line-height:1.5}
+.hero-entry{display:flex;align-items:center;justify-content:center;width:fit-content;max-width:calc(100% - 48px);line-height:1.5;gap:7px}
+.footer-bottom a{display:inline-flex;align-items:center;justify-content:center;line-height:1.5}
+.case-explore{display:flex;align-items:center;justify-content:space-between;line-height:1.5}
+
+/* Square portrait uses its original proportions without cropping. */
+[data-view="about"] .profile-image{width:100%;max-width:420px;aspect-ratio:1;height:auto;min-height:0;background:none;border:0;overflow:hidden;justify-self:center}
+[data-view="about"] .profile-image:before{display:none}
+[data-view="about"] .profile-image img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain}
+[data-view="about"] .about-layout{align-items:center}
+@media(max-width:767px){[data-view="about"] .profile-image{max-width:360px}}
+
+/* Transparent language selector background. */
+.language{background:transparent!important;box-shadow:none;border:0}
+
+
+@media(max-width:767px){.hero-details{flex-direction:column}}
+
+/* Match hero overlay controls to the shared mint fill interaction. */
+.hero-entry,.scroll-cue{background-color:transparent;background-image:linear-gradient(#bfe4dd,#bfe4dd);background-size:0% 100%;background-position:left center;background-repeat:no-repeat;transition:background-size .25s ease,color .2s ease,border-color .2s ease;opacity:1}
+.hero-entry:is(:hover,:focus-visible),.scroll-cue:is(:hover,:focus-visible){background-color:transparent;background-image:linear-gradient(#bfe4dd,#bfe4dd);background-size:100% 100%;color:#173f43!important;border-color:#bfe4dd;box-shadow:none;opacity:1}
+@media(prefers-reduced-motion:reduce){.hero-entry,.scroll-cue{transition:none}}

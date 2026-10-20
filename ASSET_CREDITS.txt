@@ -1,0 +1,12 @@
+Ocean footage: Sergey Guk / Pexels
+Source: https://www.pexels.com/video/aerial-view-of-turquoise-ocean-waves-30886101/
+License: https://www.pexels.com/license/
+Downloaded 2026-10-21. Resized and encoded as 1080p WebM for local website playback.
+TEALAY case-study images: approved assets copied from D:/A_PP/Pick. Individual cans have transparent outside margins trimmed in website copies only; original Pick files remain unchanged.
+AI tool icons: LobeHub icons-static-svg (OpenAI / Adobe Firefly brand marks), via unpkg.
+https://github.com/lobehub/lobe-icons
+https://openai.com/brand/
+Tea background references:
+https://www.clipper-teas.com/faq (CO2 decaffeination)
+https://www.tea.co.uk/tea-faqs (tea and caffeine)
+PV decaffeination method is a candidate ingredient-processing direction, not a confirmed manufacturing process. RP taste descriptions are development targets, not tested tasting results.

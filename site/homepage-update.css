@@ -1,0 +1,99 @@
+
+@font-face{font-family:ScoreDream;src:url('fonts/score-3Light.woff') format('woff');font-weight:300 400;font-display:swap}
+@font-face{font-family:ScoreDream;src:url('fonts/score-5Medium.woff') format('woff');font-weight:500 600;font-display:swap}
+@font-face{font-family:ScoreDream;src:url('fonts/score-7ExtraBold.woff') format('woff');font-weight:700 900;font-display:swap}
+:root{--cream:#f7f2e9;--ink:#173f43;--olive:#bfe4dd;--line:#aac7c2;--slot:#dceef1;--secondary:#456b6c}
+html[lang=ko]{--sans:ScoreDream,sans-serif;--serif:ScoreDream,sans-serif}
+html[lang=ko] body,html[lang=ko] button,html[lang=ko] .inner-page,html[lang=ko] .inner-page *{font-family:ScoreDream,sans-serif}
+html[lang=ko] :is(.display-title,.scattered-title,.work-head h2,.category-links>a>span:nth-child(2),.category-links em,.inner-page h1,.project-meta h2){font-family:ScoreDream,sans-serif;font-weight:300;font-style:normal}
+html[lang=ko] :is(.header nav,.footer-bottom,.category-number,.language){font-family:ScoreDream,sans-serif;font-weight:700}
+html[lang=ko] .contact-section h2{font-family:ScoreDream,sans-serif;font-weight:500}
+.monogram,.footer-name{font-family:HyejinCherish,cursive!important;font-weight:400!important}
+html:is([lang=en],[lang=es]){--sans:HyejinNotoSans,Arial,sans-serif}
+html:is([lang=en],[lang=es]) .inner-page :is(h1,h2){font-family:HyejinCormorant,Georgia,serif;font-weight:700}
+.hero-heading,body{background:var(--cream)}.hero-visual{background:var(--olive)!important}.olive-panel{background:var(--olive);color:var(--ink)}.image-caption{background:#dceef1;color:var(--ink)}.contact-section{background:var(--ink);color:#dceef1}.language,.note,.contact-status{color:var(--secondary)}
+.triangle-arrow{display:inline-block;vertical-align:middle;flex-shrink:0}
+html:is([lang=en],[lang=es]) .display-title>:nth-child(3){white-space:normal}
+@media(max-width:767px){html[lang=ko] .inner-page h1{font-size:38px}}
+/* Korean font roles synchronized with Figma 6613:349 on 2026-10-21.
+   KMU80 Sungkok Serif copyright: Kookmin University. https://80.kookmin.ac.kr/vision/font */
+@font-face{font-family:KMU80Sungkok;src:url('fonts/KMU80SungkokSerif.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap}
+html[lang=ko] :is(.display-title,.scattered-title,.work-head h2,.category-links>a>span:nth-child(2),.category-links em,.contact-section h2,.contact-section .pill-link,.header nav,.menu-toggle,.mobile-index,.hero-entry,.scroll-cue,.footer-bottom,.language,.inner-page h1,.project-meta h2){font-family:KMU80Sungkok,serif;font-weight:400;font-style:normal;font-synthesis:none}
+html[lang=ko] .scattered-title>span:first-child{font-family:HyejinCherish,cursive;font-weight:400}
+html[lang=ko] .inner-page :is(h1,h2){font-family:KMU80Sungkok,serif;font-weight:400}
+html[lang=ko] :is(.monogram,.footer-name){font-family:HyejinCherish,cursive!important;font-weight:400!important}
+html[lang=ko] :is(.hero-details,.large-copy,.image-caption,.work-note){font-family:ScoreDream,sans-serif;font-weight:300}
+html[lang=ko] :is(.underlink,.tiny-label,.light-link){font-family:ScoreDream,sans-serif;font-weight:500}
+html[lang=ko] .category-number{font-family:ScoreDream,sans-serif;font-weight:700}
+html[lang=ko] .olive-panel p{font-family:ScoreDream,sans-serif;font-weight:300}
+/* Full visual sync with current Figma main landing. */
+:root{--cream:#ffffff}
+body,.hero-heading{background:#ffffff}
+.hero-visual .design-image{object-fit:cover;object-position:center}
+.editorial-image{background:#ffffff}
+.editorial-image .design-image{object-fit:contain}
+.hero-brand{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;font:400 clamp(74px,13.89vw,200px)/1 HyejinCherish,cursive;color:#fff;z-index:1}
+.hero-entry,.scroll-cue{z-index:2}
+html[lang=ko] .hero-brand{font-family:HyejinCherish,cursive!important}
+html[lang=ko] :is(.display-title,.hero-details){color:var(--ink)}
+@media(max-width:767px){.hero-brand{font-size:clamp(74px,21vw,150px)}}
+
+/* Exact current Figma node geometry and colors; 1440px reference. */
+.hero-brand{inset:auto;left:50%;top:203px;transform:translateX(-50%);width:345px;height:234px;display:block;color:#eafffb;font-family:HyejinCherish,cursive;font-weight:400}
+.hero-brand svg{width:100%;height:100%;display:block;overflow:visible}
+.hero-brand text{font-family:HyejinCherish,cursive;font-size:200px;font-weight:400;fill:#eafffb}
+.hero-entry{color:#dceef1;border-color:#dceef1;background:rgba(255,255,255,.19);bottom:56px;height:39px;padding:10px 18px;min-width:118px}
+.scroll-cue{color:#dceef1;bottom:30px;line-height:10px;letter-spacing:0}
+.underlink,.work-note .tiny-label{color:#173f43}
+.image-caption{width:360px;min-height:110px;padding:18px 24px;background:#dceef1;color:#173f43;bottom:0;left:0}
+.olive-panel{background:#bfe4dd;color:#173f43}
+.olive-panel p{margin:24px 0;line-height:33px}
+.contact-section{background:#173f43;color:#dceef1}
+.contact-section .pill-link{color:#bfe4dd}
+.language{color:#173f43}
+.reveal{opacity:1!important;transform:none!important}
+@media(min-width:1101px){
+.header{height:114px}
+.hero-heading{height:490px;padding:50px 24px 62px}
+.display-title{grid-template-columns:repeat(1392,minmax(0,1fr));grid-template-rows:119px 119px;column-gap:0;row-gap:24px;line-height:1.45}
+.display-title>:nth-child(1){grid-column:1/681;grid-row:1}
+.display-title>:nth-child(2){grid-column:713/1393;grid-row:1}
+.display-title>:nth-child(3),html:is([lang=en],[lang=es]) .display-title>:nth-child(3){grid-column:471/924;grid-row:2}
+.display-title>:nth-child(4),html:is([lang=en],[lang=es]) .display-title>:nth-child(4){grid-column:940/1393;grid-row:2}
+.hero-details{margin-top:24px;padding-top:35px;grid-template-columns:676fr 676fr;gap:40px;height:92px;line-height:1.45}
+.hero-visual{height:640px;min-height:640px;max-height:640px}
+.about-section{height:939px;padding:48px 24px 95px}
+.scattered-title,html:is([lang=en],[lang=es]) .scattered-title{height:292px;position:relative;margin:0 0 24px;padding:159px 0 55px;grid-template-rows:78px;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.scattered-title>:nth-child(1){position:absolute;left:0;top:60px;width:100%;height:99px;font-size:68px!important;line-height:1.45;text-align:center;color:#bfe4dd}
+.scattered-title>:nth-child(2){grid-column:1;grid-row:1}
+.scattered-title>:nth-child(3){grid-column:2;grid-row:1}
+.scattered-title>:nth-child(4){grid-column:3;grid-row:1}
+.editorial-grid{height:480px;grid-template-columns:minmax(0,490fr) minmax(0,862fr);gap:40px}
+.editorial-copy{padding-top:70px}.large-copy{line-height:29px}
+.work-section{height:990px;padding:80px 24px 50px}
+.work-head h2{height:186px;margin:0 0 24px;line-height:1.45}
+.work-composition{height:650px}
+.category-section{height:501px;padding:50px 24px 85px}
+.category-links{margin:0;gap:24px}
+.contact-section{height:376px;padding:55px 24px 85px}
+.contact-section h2{height:192px;margin:0 0 24px;line-height:1.45}
+.contact-section .pill-link{height:20px;line-height:20px}
+footer{height:485px;padding:65px 24px 120px}.footer-name{height:261px;line-height:261px}.footer-bottom{margin-top:24px;line-height:15px}
+}
+@media(max-width:767px){.hero-brand{width:240px;height:163px;top:130px}.scroll-cue{bottom:18px}.hero-heading{height:auto}.contact-section h2{height:auto}}
+@media(min-width:1101px){
+.scattered-title,html:is([lang=en],[lang=es]) .scattered-title{display:block}
+.scattered-title>:nth-child(1){position:absolute;inset:60px 0 auto 0;margin:0;width:100%;height:99px;line-height:99px}
+.scattered-title>:nth-child(2),.scattered-title>:nth-child(3),.scattered-title>:nth-child(4){position:absolute;top:159px;width:calc((100% - 40px)/3);height:78px;margin:0;line-height:78px}
+.scattered-title>:nth-child(2){left:0}.scattered-title>:nth-child(3){left:calc((100% - 40px)/3 + 20px)}.scattered-title>:nth-child(4){left:calc((100% - 40px)/3 * 2 + 40px)}
+}
+/* Category and inner-page typography follows the current language landing. */
+html[lang=ko] .inner-page :is(h1,h2,.filters button,.text-link){font-family:KMU80Sungkok,serif;font-weight:400;font-synthesis:none}
+html[lang=ko] .inner-page :is(.lead,.note,.project-meta>span,.project-status,.empty,.contact-status,.placeholder span,.section-label){font-family:ScoreDream,sans-serif;font-weight:300}
+html:is([lang=en],[lang=es]) .inner-page :is(h1,h2,.filters button,.text-link){font-family:HyejinCormorant,Georgia,serif;font-weight:700;font-synthesis:none}
+html:is([lang=en],[lang=es]) .inner-page :is(.lead,.note,.project-meta>span,.project-status,.empty,.contact-status,.placeholder span,.section-label){font-family:HyejinNotoSans,Arial,sans-serif;font-weight:400}
+.inner-page .filters{border-color:var(--line)}
+.inner-page .filters button[aria-pressed=true]{background:#173f43;color:#dceef1;border-color:#173f43}
+.inner-page .filters button:not([aria-pressed=true]){background:transparent;color:#173f43;border-color:var(--line)}
+.inner-page .project-meta{border-color:var(--line)}
+@media(min-width:1101px){html:is([lang=en],[lang=es]) .display-title{grid-template-columns:repeat(1392,minmax(0,1fr));grid-template-rows:119px 119px;column-gap:0;row-gap:24px}html:is([lang=en],[lang=es]) .display-title>:nth-child(1){grid-column:1/681}html:is([lang=en],[lang=es]) .display-title>:nth-child(2){grid-column:713/1393}}
